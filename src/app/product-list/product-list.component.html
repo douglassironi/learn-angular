@@ -1,0 +1,8 @@
+   <mat-card *ngFor="let product of products" style="margin-top:10px;">
+    <mat-card-header>
+      <mat-card-title>
+        <div>#{{product.codigo}} {{product.descricao}} <mat-icon>attach_money</mat-icon> {{product.valorVenda}} </div>
+      </mat-card-title>
+      <button mat-button  color="primary" (click)="openDialog(product)"> <mat-icon>shopping_cart</mat-icon> </button>
+    </mat-card-header>
+    </mat-card>

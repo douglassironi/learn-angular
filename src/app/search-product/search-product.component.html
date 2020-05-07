@@ -1,0 +1,12 @@
+<div style="padding: 13px;">
+  <mat-card >
+    <mat-card-header>
+    </mat-card-header>
+    <mat-card-content>
+      <input #search [name]="searchField" (keyup.enter)="searchFieldEnter(search.value)" placeholder="Find a product or service to add a basquet." >
+    </mat-card-content>
+  </mat-card>
+  <mat-card-header>
+  </mat-card-header>
+  <app-product-list [products]="products" > </app-product-list>
+</div>

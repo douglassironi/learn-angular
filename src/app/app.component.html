@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+  <h1>
+    Salon Online Shop
+  </h1>
+  <button mat-button routerLink="/" >Home</button>
+  <button mat-button routerLink="/about">About</button>
+</mat-toolbar>
+<mat-drawer-container class="app-container">
+  <mat-drawer mode="side" opened >
+    <ul>
+      <button mat-fab >  <mat-icon>people</mat-icon> </button>
+    </ul>
+    <ul>
+      <button mat-fab >  <mat-icon> shopping_cart </mat-icon> </button>
+    </ul>
+  </mat-drawer>
+  <mat-drawer-content><app-search-product ></app-search-product></mat-drawer-content>
+</mat-drawer-container>
